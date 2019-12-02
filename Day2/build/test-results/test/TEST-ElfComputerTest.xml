@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ElfComputerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-12-02T10:39:14" hostname="DESKTOP-UF6QME7" time="0.012">
+  <properties/>
+  <testcase name="computeTestMultiplication0_to_9801()" classname="ElfComputerTest" time="0.009"/>
+  <testcase name="computeTestMultiplication2_to_6()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="computeTestSeveralInstructions()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="computeTestAddition1_to_2()" classname="ElfComputerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
