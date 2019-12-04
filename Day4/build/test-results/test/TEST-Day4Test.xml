@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Day4Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-12-04T19:05:25" hostname="DESKTOP-UF6QME7" time="0.012">
+  <properties/>
+  <testcase name="onlyIncreasingNumbersTest_expectsTrue()" classname="Day4Test" time="0.007"/>
+  <testcase name="onlyIncreasingNumbersTest_expectsFalse()" classname="Day4Test" time="0.001"/>
+  <testcase name="LikeAdjacentToLikeTest_expectsTrue()" classname="Day4Test" time="0.0"/>
+  <testcase name="LikeAdjacentToLikeTest_expectsFalse()" classname="Day4Test" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
