@@ -33,17 +33,12 @@ public class Day2Tasks {
                         System.out.println("Answer (part 2): Noun:" + i + ", Verb: " + j);
                         break;
                     }
-                    else {
-
-                    }
                 }
                 catch (IllegalArgumentException iae) {
                     System.out.println("Crash: " + i + ", " + j);
                     continue;
                 }
-
             }
-
         }
 
 

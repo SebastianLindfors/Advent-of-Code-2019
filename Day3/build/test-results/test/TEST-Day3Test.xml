@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Day3Test" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-12-04T00:53:34" hostname="DESKTOP-UF6QME7" time="0.034">
+  <properties/>
+  <testcase name="manhattanDistance_ComputationTest()" classname="Day3Test" time="0.009"/>
+  <testcase name="computeSmallestManhattanDistance()" classname="Day3Test" time="0.003"/>
+  <testcase name="computeWireToAnswerTest1()" classname="Day3Test" time="0.001"/>
+  <testcase name="computeWireToAnswerTest2()" classname="Day3Test" time="0.001"/>
+  <testcase name="computeWireToAnswerTest3()" classname="Day3Test" time="0.009"/>
+  <testcase name="computeWireToAnswerTest4()" classname="Day3Test" time="0.003"/>
+  <testcase name="computeWireDistanceTest1()" classname="Day3Test" time="0.001"/>
+  <testcase name="computeWireDistanceTest2()" classname="Day3Test" time="0.001"/>
+  <testcase name="computeIntersectionOfWiresTest1()" classname="Day3Test" time="0.001"/>
+  <testcase name="computeIntersectionOfWiresTest2()" classname="Day3Test" time="0.001"/>
+  <system-out><![CDATA[W1 Start: 0.0, 0.0 End: 98.0, 0.0 Target: 107.0, 47.0
+W2 Start: 0.0, 0.0 End: 0.0, 98.0 Target: 107.0, 47.0
+W1 Start: 98.0, 0.0 End: 98.0, 47.0 Target: 107.0, 47.0
+W2 Start: 0.0, 98.0 End: 91.0, 98.0 Target: 107.0, 47.0
+W1 Start: 98.0, 47.0 End: 124.0, 47.0 Target: 107.0, 47.0
+Wire 1 Distance Located! Distance to point: 17.0
+W2 Start: 91.0, 98.0 End: 91.0, 78.0 Target: 107.0, 47.0
+W2 Start: 91.0, 78.0 End: 107.0, 78.0 Target: 107.0, 47.0
+W2 Start: 107.0, 78.0 End: 107.0, 11.0 Target: 107.0, 47.0
+Wire 2 Distance Located! Distance to point: 36.0
+Wire Distance: 410
+W1 Start: 0.0, 0.0 End: 98.0, 0.0 Target: 107.0, 71.0
+W2 Start: 0.0, 0.0 End: 0.0, 98.0 Target: 107.0, 71.0
+W1 Start: 98.0, 0.0 End: 98.0, 47.0 Target: 107.0, 71.0
+W2 Start: 0.0, 98.0 End: 91.0, 98.0 Target: 107.0, 71.0
+W1 Start: 98.0, 47.0 End: 124.0, 47.0 Target: 107.0, 71.0
+W2 Start: 91.0, 98.0 End: 91.0, 78.0 Target: 107.0, 71.0
+W1 Start: 124.0, 47.0 End: 124.0, -16.0 Target: 107.0, 71.0
+W2 Start: 91.0, 78.0 End: 107.0, 78.0 Target: 107.0, 71.0
+W1 Start: 124.0, -16.0 End: 157.0, -16.0 Target: 107.0, 71.0
+W2 Start: 107.0, 78.0 End: 107.0, 11.0 Target: 107.0, 71.0
+Wire 2 Distance Located! Distance to point: 60.0
+W1 Start: 157.0, -16.0 End: 157.0, 71.0 Target: 107.0, 71.0
+W1 Start: 157.0, 71.0 End: 95.0, 71.0 Target: 107.0, 71.0
+Wire 1 Distance Located! Distance to point: 12.0
+Wire Distance: 636
+W1 Start: 0.0, 0.0 End: 98.0, 0.0 Target: 107.0, 51.0
+W2 Start: 0.0, 0.0 End: 0.0, 98.0 Target: 107.0, 51.0
+W1 Start: 98.0, 0.0 End: 98.0, 47.0 Target: 107.0, 51.0
+W2 Start: 0.0, 98.0 End: 91.0, 98.0 Target: 107.0, 51.0
+W1 Start: 98.0, 47.0 End: 124.0, 47.0 Target: 107.0, 51.0
+W2 Start: 91.0, 98.0 End: 91.0, 78.0 Target: 107.0, 51.0
+W1 Start: 124.0, 47.0 End: 124.0, -16.0 Target: 107.0, 51.0
+W2 Start: 91.0, 78.0 End: 107.0, 78.0 Target: 107.0, 51.0
+W1 Start: 124.0, -16.0 End: 157.0, -16.0 Target: 107.0, 51.0
+W2 Start: 107.0, 78.0 End: 107.0, 11.0 Target: 107.0, 51.0
+Wire 2 Distance Located! Distance to point: 40.0
+W1 Start: 157.0, -16.0 End: 157.0, 71.0 Target: 107.0, 51.0
+W1 Start: 157.0, 71.0 End: 95.0, 71.0 Target: 107.0, 51.0
+W1 Start: 95.0, 71.0 End: 95.0, 51.0 Target: 107.0, 51.0
+W1 Start: 95.0, 51.0 End: 128.0, 51.0 Target: 107.0, 51.0
+Wire 1 Distance Located! Distance to point: 21.0
+Wire Distance: 700
+W1 Start: 0.0, 0.0 End: 98.0, 0.0 Target: 124.0, 11.0
+W2 Start: 0.0, 0.0 End: 0.0, 98.0 Target: 124.0, 11.0
+W1 Start: 98.0, 0.0 End: 98.0, 47.0 Target: 124.0, 11.0
+W2 Start: 0.0, 98.0 End: 91.0, 98.0 Target: 124.0, 11.0
+W1 Start: 98.0, 47.0 End: 124.0, 47.0 Target: 124.0, 11.0
+W2 Start: 91.0, 98.0 End: 91.0, 78.0 Target: 124.0, 11.0
+W1 Start: 124.0, 47.0 End: 124.0, -16.0 Target: 124.0, 11.0
+Wire 1 Distance Located! Distance to point: 27.0
+W2 Start: 91.0, 78.0 End: 107.0, 78.0 Target: 124.0, 11.0
+W2 Start: 107.0, 78.0 End: 107.0, 11.0 Target: 124.0, 11.0
+W2 Start: 107.0, 11.0 End: 147.0, 11.0 Target: 124.0, 11.0
+Wire 2 Distance Located! Distance to point: 23.0
+Wire Distance: 516
+W1 Start: 0.0, 0.0 End: 98.0, 0.0 Target: 157.0, 18.0
+W2 Start: 0.0, 0.0 End: 0.0, 98.0 Target: 157.0, 18.0
+W1 Start: 98.0, 0.0 End: 98.0, 47.0 Target: 157.0, 18.0
+W2 Start: 0.0, 98.0 End: 91.0, 98.0 Target: 157.0, 18.0
+W1 Start: 98.0, 47.0 End: 124.0, 47.0 Target: 157.0, 18.0
+W2 Start: 91.0, 98.0 End: 91.0, 78.0 Target: 157.0, 18.0
+W1 Start: 124.0, 47.0 End: 124.0, -16.0 Target: 157.0, 18.0
+W2 Start: 91.0, 78.0 End: 107.0, 78.0 Target: 157.0, 18.0
+W1 Start: 124.0, -16.0 End: 157.0, -16.0 Target: 157.0, 18.0
+W2 Start: 107.0, 78.0 End: 107.0, 11.0 Target: 157.0, 18.0
+W1 Start: 157.0, -16.0 End: 157.0, 71.0 Target: 157.0, 18.0
+Wire 1 Distance Located! Distance to point: 53.0
+W2 Start: 107.0, 11.0 End: 147.0, 11.0 Target: 157.0, 18.0
+W2 Start: 147.0, 11.0 End: 147.0, 18.0 Target: 157.0, 18.0
+W2 Start: 147.0, 18.0 End: 162.0, 18.0 Target: 157.0, 18.0
+Wire 2 Distance Located! Distance to point: 5.0
+Wire Distance: 650
+W1 Start: 0.0, 0.0 End: 75.0, 0.0 Target: 155.0, 4.0
+W2 Start: 0.0, 0.0 End: 0.0, 62.0 Target: 155.0, 4.0
+W1 Start: 75.0, 0.0 End: 75.0, -30.0 Target: 155.0, 4.0
+W2 Start: 0.0, 62.0 End: 66.0, 62.0 Target: 155.0, 4.0
+W1 Start: 75.0, -30.0 End: 158.0, -30.0 Target: 155.0, 4.0
+W2 Start: 66.0, 62.0 End: 66.0, 117.0 Target: 155.0, 4.0
+W1 Start: 158.0, -30.0 End: 158.0, 53.0 Target: 155.0, 4.0
+W2 Start: 66.0, 117.0 End: 100.0, 117.0 Target: 155.0, 4.0
+W1 Start: 158.0, 53.0 End: 146.0, 53.0 Target: 155.0, 4.0
+W2 Start: 100.0, 117.0 End: 100.0, 46.0 Target: 155.0, 4.0
+W1 Start: 146.0, 53.0 End: 146.0, 4.0 Target: 155.0, 4.0
+W2 Start: 100.0, 46.0 End: 155.0, 46.0 Target: 155.0, 4.0
+W1 Start: 146.0, 4.0 End: 217.0, 4.0 Target: 155.0, 4.0
+Wire 1 Distance Located! Distance to point: 62.0
+W2 Start: 155.0, 46.0 End: 155.0, -12.0 Target: 155.0, 4.0
+Wire 2 Distance Located! Distance to point: 16.0
+Wire Distance: 726
+W1 Start: 0.0, 0.0 End: 75.0, 0.0 Target: 155.0, 11.0
+W2 Start: 0.0, 0.0 End: 0.0, 62.0 Target: 155.0, 11.0
+W1 Start: 75.0, 0.0 End: 75.0, -30.0 Target: 155.0, 11.0
+W2 Start: 0.0, 62.0 End: 66.0, 62.0 Target: 155.0, 11.0
+W1 Start: 75.0, -30.0 End: 158.0, -30.0 Target: 155.0, 11.0
+W2 Start: 66.0, 62.0 End: 66.0, 117.0 Target: 155.0, 11.0
+W1 Start: 158.0, -30.0 End: 158.0, 53.0 Target: 155.0, 11.0
+W2 Start: 66.0, 117.0 End: 100.0, 117.0 Target: 155.0, 11.0
+W1 Start: 158.0, 53.0 End: 146.0, 53.0 Target: 155.0, 11.0
+W2 Start: 100.0, 117.0 End: 100.0, 46.0 Target: 155.0, 11.0
+W1 Start: 146.0, 53.0 End: 146.0, 4.0 Target: 155.0, 11.0
+W2 Start: 100.0, 46.0 End: 155.0, 46.0 Target: 155.0, 11.0
+W1 Start: 146.0, 4.0 End: 217.0, 4.0 Target: 155.0, 11.0
+W2 Start: 155.0, 46.0 End: 155.0, -12.0 Target: 155.0, 11.0
+Wire 2 Distance Located! Distance to point: 23.0
+W1 Start: 217.0, 4.0 End: 217.0, 11.0 Target: 155.0, 11.0
+Wire Distance: 788
+W1 Start: 0.0, 0.0 End: 75.0, 0.0 Target: 158.0, -12.0
+W2 Start: 0.0, 0.0 End: 0.0, 62.0 Target: 158.0, -12.0
+W1 Start: 75.0, 0.0 End: 75.0, -30.0 Target: 158.0, -12.0
+W2 Start: 0.0, 62.0 End: 66.0, 62.0 Target: 158.0, -12.0
+W1 Start: 75.0, -30.0 End: 158.0, -30.0 Target: 158.0, -12.0
+W2 Start: 66.0, 62.0 End: 66.0, 117.0 Target: 158.0, -12.0
+W1 Start: 158.0, -30.0 End: 158.0, 53.0 Target: 158.0, -12.0
+Wire 1 Distance Located! Distance to point: 65.0
+W2 Start: 66.0, 117.0 End: 100.0, 117.0 Target: 158.0, -12.0
+W2 Start: 100.0, 117.0 End: 100.0, 46.0 Target: 158.0, -12.0
+W2 Start: 100.0, 46.0 End: 155.0, 46.0 Target: 158.0, -12.0
+W2 Start: 155.0, 46.0 End: 155.0, -12.0 Target: 158.0, -12.0
+W2 Start: 155.0, -12.0 End: 238.0, -12.0 Target: 158.0, -12.0
+Wire 2 Distance Located! Distance to point: 80.0
+Wire Distance: 610
+W1 Start: 0.0, 0.0 End: 75.0, 0.0 Target: 146.0, 46.0
+W2 Start: 0.0, 0.0 End: 0.0, 62.0 Target: 146.0, 46.0
+W1 Start: 75.0, 0.0 End: 75.0, -30.0 Target: 146.0, 46.0
+W2 Start: 0.0, 62.0 End: 66.0, 62.0 Target: 146.0, 46.0
+W1 Start: 75.0, -30.0 End: 158.0, -30.0 Target: 146.0, 46.0
+W2 Start: 66.0, 62.0 End: 66.0, 117.0 Target: 146.0, 46.0
+W1 Start: 158.0, -30.0 End: 158.0, 53.0 Target: 146.0, 46.0
+W2 Start: 66.0, 117.0 End: 100.0, 117.0 Target: 146.0, 46.0
+W1 Start: 158.0, 53.0 End: 146.0, 53.0 Target: 146.0, 46.0
+W2 Start: 100.0, 117.0 End: 100.0, 46.0 Target: 146.0, 46.0
+W1 Start: 146.0, 53.0 End: 146.0, 4.0 Target: 146.0, 46.0
+Wire 1 Distance Located! Distance to point: 42.0
+W2 Start: 100.0, 46.0 End: 155.0, 46.0 Target: 146.0, 46.0
+Wire 2 Distance Located! Distance to point: 9.0
+Wire Distance: 624
+W1 Start: 0.0, 0.0 End: 8.0, 0.0 Target: 3.0, 3.0
+W2 Start: 0.0, 0.0 End: 0.0, 7.0 Target: 3.0, 3.0
+W1 Start: 8.0, 0.0 End: 8.0, 5.0 Target: 3.0, 3.0
+W2 Start: 0.0, 7.0 End: 6.0, 7.0 Target: 3.0, 3.0
+W1 Start: 8.0, 5.0 End: 3.0, 5.0 Target: 3.0, 3.0
+W2 Start: 6.0, 7.0 End: 6.0, 3.0 Target: 3.0, 3.0
+W1 Start: 3.0, 5.0 End: 3.0, 2.0 Target: 3.0, 3.0
+Wire 1 Distance Located! Distance to point: 1.0
+W2 Start: 6.0, 3.0 End: 2.0, 3.0 Target: 3.0, 3.0
+Wire 2 Distance Located! Distance to point: 1.0
+W1 Start: 0.0, 0.0 End: 8.0, 0.0 Target: 6.0, 5.0
+W2 Start: 0.0, 0.0 End: 0.0, 7.0 Target: 6.0, 5.0
+W1 Start: 8.0, 0.0 End: 8.0, 5.0 Target: 6.0, 5.0
+W2 Start: 0.0, 7.0 End: 6.0, 7.0 Target: 6.0, 5.0
+W1 Start: 8.0, 5.0 End: 3.0, 5.0 Target: 6.0, 5.0
+Wire 1 Distance Located! Distance to point: 3.0
+W2 Start: 6.0, 7.0 End: 6.0, 3.0 Target: 6.0, 5.0
+Wire 2 Distance Located! Distance to point: 2.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
