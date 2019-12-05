@@ -18,8 +18,9 @@ public class Day2Tasks {
         for (int i = 0; i < parsedData.length; i++) {
             completedData[i] = Integer.parseInt(parsedData[i].strip());
         }
+        ElfComputer partOneComputer = new ElfComputer(completedData);
 
-        int[] result = ElfComputer.executeProgram(completedData);
+        int[] result = partOneComputer.executeProgram();
         System.out.println("Answer (part 1): " + result[0]);
 
 
@@ -27,8 +28,9 @@ public class Day2Tasks {
             for (int j = 0; j < 100; j++) {
                 completedData[1] = i;
                 completedData[2] = j;
+                ElfComputer partTwoComputer = new ElfComputer(completedData);
                 try {
-                    result = ElfComputer.executeProgram(completedData);
+                    result = partTwoComputer.executeProgram();
                     if (result[0] == 19690720) {
                         System.out.println("Answer (part 2): Noun:" + i + ", Verb: " + j);
                         break;
