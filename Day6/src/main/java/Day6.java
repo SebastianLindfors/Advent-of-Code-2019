@@ -23,10 +23,8 @@ public class Day6 {
             String[] OMCNames = orbitInfo.split("\\)");
             String orbiteeName = OMCNames[0];
             String orbiterName = OMCNames[1];
-            //System.out.println("OMC Names: " + OMCNames[0] + ", " + OMCNames[1]);
 
             if (listOfOrbits.containsKey(orbiteeName) && listOfOrbits.containsKey(orbiterName)) {
-
                 //Empty but more readable for now.
             }
             else if (listOfOrbits.containsKey(orbiteeName)) {
@@ -44,7 +42,6 @@ public class Day6 {
             listOfOrbits.get(orbiterName).setOrbits(listOfOrbits.get(orbiteeName));
 
         }
-
         int totalOrbits = 0;
         for (String name : listOfOrbits.keySet()) {
               totalOrbits += listOfOrbits.get(name).computeOrbitalDepth();
@@ -52,8 +49,7 @@ public class Day6 {
 
         System.out.println("The total number of direct and indirect orbits in the map data is: " + totalOrbits);
 
-        System.out.println("YOU: " + listOfOrbits.get("YOU").computeOrbitalDepth());
-        System.out.println("Santa: " + listOfOrbits.get("SAN").computeOrbitalDepth());
+        //-------------------------------Part 2 --------------------------------------------------------------//
 
         OMC myOrbit = listOfOrbits.get("YOU").orbits;
         OMC santasOrbit = listOfOrbits.get("SAN").orbits;
@@ -72,7 +68,6 @@ public class Day6 {
             else if (visited.containsKey(santasOrbit.orbits)) {
                 minimumTransfersNeeded = visited.get(santasOrbit) + visited.get(santasOrbit.orbits) + 1;
                 break;
-
             }
             else {
                 myOrbit = myOrbit.orbits;

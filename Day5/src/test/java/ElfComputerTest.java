@@ -34,7 +34,7 @@ public class ElfComputerTest {
         int[] input = {3,9,8,9,10,9,4,9,99,-1,8};
         ElfComputer testComputer = new ElfComputer(input);
 
-        int[] actual = testComputer.executeProgram();
+        testComputer.executeProgram();
         Assertions.assertEquals("1", out.toString());
 
         System.setIn(originalIn);
@@ -56,7 +56,7 @@ public class ElfComputerTest {
         int[] input = {3,9,8,9,10,9,4,9,99,-1,8};
         ElfComputer testComputer = new ElfComputer(input);
 
-        int[] actual = testComputer.executeProgram();
+        testComputer.executeProgram();
         Assertions.assertEquals("0", out.toString());
 
         System.setIn(originalIn);
