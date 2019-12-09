@@ -22,8 +22,8 @@ public class Day7Tasks {
         String[] input = new String[5];
 
         int [] possiblePhaseSettings = {0,1,2,3,4};
-        int maximumOutput = Integer.MIN_VALUE;
-        int output = 0;
+        long maximumOutput = Integer.MIN_VALUE;
+        long output = 0;
         for (int[] phaseSettings : getAllPermutations(possiblePhaseSettings)) {
             input[0] = phaseSettings[0] + System.lineSeparator() + "0";
             ampArray[0].setUpInput(input[0]);
@@ -50,8 +50,8 @@ public class Day7Tasks {
                 ampArray[i].setUpInput(input[i]);
                 ampArray[i].executeProgram();
             }
-            List<Integer> amp5Out= new ArrayList<>();
-            amp5Out.add(0);
+            List<Long> amp5Out= new ArrayList<>();
+            amp5Out.add(0L);
             while (!ampArray[4].isExecutionHalted()) {
                 input[0] = amp5Out.get(0).toString();
                 ampArray[0].setUpInput(input[0]);

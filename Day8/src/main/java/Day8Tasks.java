@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +8,7 @@ public class Day8Tasks {
 
     public static void main(String[] args) {
 
-        String fileName = "src\\main\\resources\\Day8.txt";
+        String fileName = "src\\main\\resources\\Day8Alex.txt";
         String rawData = "";
         try {
             rawData = loadDataFromDisk(fileName);

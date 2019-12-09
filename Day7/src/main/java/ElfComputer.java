@@ -2,26 +2,28 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ElfComputer {
 
     boolean haltExecution = false;
 
-    int[] originalState;
-    int[] computerMemory;
+    private Map<Long,Long> memoryBank = new HashMap<>()
+            ;
 
-    int SystemIndex = 0;
+    long[] originalState;
+    long[] programMemory;
+
+    long SystemIndex = 0;
+    long relativeBase = 0;
 
     Scanner inputScanner = new Scanner(System.in);
 
     public ElfComputer(int[] program) {
 
-        computerMemory = new int[program.length];
-        originalState = new int[program.length];
-        System.arraycopy(program,0,computerMemory,0, program.length);
+        programMemory = new long[program.length];
+        originalState = new long[program.length];
+        System.arraycopy(program,0, programMemory,0, program.length);
         System.arraycopy(program,0,originalState,0, program.length);
 
         inputScanner = new Scanner(System.in);
@@ -29,9 +31,9 @@ public class ElfComputer {
 
     public ElfComputer(int[] program, ByteArrayInputStream in) {
 
-        computerMemory = new int[program.length];
-        originalState = new int[program.length];
-        System.arraycopy(program,0,computerMemory,0, program.length);
+        programMemory = new long[program.length];
+        originalState = new long[program.length];
+        System.arraycopy(program,0, programMemory,0, program.length);
         System.arraycopy(program,0,originalState,0, program.length);
 
         inputScanner = new Scanner(in);
@@ -51,9 +53,9 @@ public class ElfComputer {
             program[i] = Integer.parseInt(parsedData[i].strip());
         }
 
-        computerMemory = new int[program.length];
-        originalState = new int[program.length];
-        System.arraycopy(program,0,computerMemory,0, program.length);
+        programMemory = new long[program.length];
+        originalState = new long[program.length];
+        System.arraycopy(program,0, programMemory,0, program.length);
         System.arraycopy(program,0,originalState,0, program.length);
 
         inputScanner = new Scanner(in);
@@ -68,41 +70,43 @@ public class ElfComputer {
             e.printStackTrace();
         }
         String[] parsedData = rawData.split(",");
-        int[] program = new int[parsedData.length];
+        long[] program = new long[parsedData.length];
         for (int i = 0; i < parsedData.length; i++) {
-            program[i] = Integer.parseInt(parsedData[i].strip());
+            program[i] = Long.parseLong(parsedData[i].strip());
         }
 
-        computerMemory = new int[program.length];
-        originalState = new int[program.length];
-        System.arraycopy(program,0,computerMemory,0, program.length);
+        programMemory = new long[program.length];
+        originalState = new long[program.length];
+        System.arraycopy(program,0, programMemory,0, program.length);
         System.arraycopy(program,0,originalState,0, program.length);
 
         inputScanner = new Scanner(System.in);
     }
 
 
-    public List<Integer> executeProgram() {
-        List<Integer> output = new ArrayList<>();
+    public List<Long> executeProgram() {
+        List<Long> output = new ArrayList<>();
 
         while(!haltExecution) {
-            int[] instructionsAndParameters = determineOpcodeAndParameters(SystemIndex);
+            long[] instructionsAndParameters = determineOpcodeAndParameters((int) SystemIndex);
 
             //System.out.println("Opcode: " + instructionsAndParameters[0]);
-            switch (instructionsAndParameters[0]) {
+            switch ((int) instructionsAndParameters[0]) {
                 case 1: //addition
-                    computerMemory[instructionsAndParameters[3]] = instructionsAndParameters[1] + instructionsAndParameters[2];
+                    long sum =  instructionsAndParameters[1] + instructionsAndParameters[2];
+                    writeDataToMemory(instructionsAndParameters[3], sum);
                     SystemIndex += 4;
                     break;
                 case 2: //multiplication
-                    computerMemory[instructionsAndParameters[3]] = instructionsAndParameters[1] * instructionsAndParameters[2];
+                    long product =  instructionsAndParameters[1] * instructionsAndParameters[2];
+                    writeDataToMemory(instructionsAndParameters[3], product);
                     SystemIndex += 4;
                     break;
                 case 3: //input
                     if (!inputScanner.hasNextInt()) {
                         return output;
                     }
-                    computerMemory[instructionsAndParameters[1]] = inputScanner.nextInt();
+                    writeDataToMemory(instructionsAndParameters[1], inputScanner.nextInt());
 
                     SystemIndex += 2;
                     break;
@@ -128,21 +132,26 @@ public class ElfComputer {
                     break;
                 case 7: //Less Than
                     if (instructionsAndParameters[1] < instructionsAndParameters[2]) {
-                        computerMemory[instructionsAndParameters[3]] = 1;
+                        writeDataToMemory(instructionsAndParameters[3], 1);
                     }
                     else {
-                        computerMemory[instructionsAndParameters[3]] = 0;
+                        writeDataToMemory(instructionsAndParameters[3], 0);
                     }
                     SystemIndex += 4;
                     break;
                 case 8: //Equals
                     if (instructionsAndParameters[1] == instructionsAndParameters[2]) {
-                        computerMemory[instructionsAndParameters[3]] = 1;
+                        writeDataToMemory(instructionsAndParameters[3], 1);
                     }
                     else {
-                        computerMemory[instructionsAndParameters[3]] = 0;
+                        writeDataToMemory(instructionsAndParameters[3], 0);
                     }
                     SystemIndex += 4;
+                    break;
+                case 9: //Change relative base
+                    relativeBase += instructionsAndParameters[1];
+                    System.out.println("Relative base now: " + relativeBase);
+                    SystemIndex += 2;
                     break;
                 case 99:
                     haltExecution = true;
@@ -154,30 +163,27 @@ public class ElfComputer {
         return output;
     }
 
-    private int[] determineOpcodeAndParameters(int index) {
+    private long[] determineOpcodeAndParameters(int index) {
 
-        int instruction = computerMemory[index];
+        long instruction = programMemory[index];
 
-        int[] parameters = {0,0,0,0,0};
+        long[] parameters = {0,0,0,0,0};
         parameters[0] = instruction % 100;
         if (parameters[0] == 99) {
             return parameters;
         }
         int parameterNumber = -1;
 
-        switch (parameters[0]) {
+        switch ((int) parameters[0]) {
             case 1:
             case 2:
             case 7:
             case 8:
-                parameterNumber = 2;
-                parameters[3] = computerMemory[index + 3];
+                parameterNumber = 3;
                 break;
             case 3:
-                parameterNumber = 0;
-                parameters[1] = computerMemory[index + 1];
-                break;
             case 4:
+            case 9:
                 parameterNumber = 1;
                 break;
             case 5:
@@ -190,7 +196,7 @@ public class ElfComputer {
             default:
                 throw new IllegalArgumentException("Unknown Instruction: " + parameters[0]);
         }
-        //System.out.println("Opcode: " + parameters[0] + " Number of arguments: " + parameterNumber);
+        System.out.println("Instruction: " + instruction + " Opcode: " + parameters[0] + " Number of arguments: " + parameterNumber);
 
         instruction /= 100;
         for (int j = 1; j <= parameterNumber; j++) {
@@ -199,18 +205,30 @@ public class ElfComputer {
             instruction /= 10;
         }
 
+        if (parameterNumber == 3) {
+            if (parameters[3] == 0) {
+                parameters[3] = 1;            }
+        }
+        System.out.println("Parameter Modes: ");
+        for (int j = 1; j <= parameterNumber; j++) {
+            System.out.println(j + ": " +parameters[j]);
+        }
 
-        //System.out.println("Parameters:");
+
+        System.out.println("Parameters:");
         for (int i = 1; i <= parameterNumber; i++) {
-            //System.out.print(i + ": ");
+            System.out.print(i + ": ");
 
             if (parameters[i] == 0) {
-                parameters[i] = computerMemory[computerMemory[index + i]];
-                //System.out.println(parameters[i]);
+                parameters[i] = readDataFromMemory(programMemory[index + i]);
+                System.out.println(parameters[i]);
             }
             else if (parameters[i] == 1) {
-                parameters[i] = computerMemory[index + i];
-                //System.out.println(parameters[i]);
+                parameters[i] = readDataFromMemory(index + i);
+                System.out.println(parameters[i]);
+            }
+            else if (parameters[i] == 2) {
+                parameters[i] = readDataFromMemory( programMemory[index + i] + relativeBase);
             }
             else {
                 throw new IllegalArgumentException("Invalid Instructions Detected");
@@ -220,8 +238,9 @@ public class ElfComputer {
     }
 
     public void resetElfComputer() {
-        System.arraycopy(originalState,0,computerMemory,0, computerMemory.length);
+        System.arraycopy(originalState,0, programMemory,0, programMemory.length);
         SystemIndex = 0;
+        relativeBase = 0;
         haltExecution = false;
     }
 
@@ -245,11 +264,40 @@ public class ElfComputer {
         inputScanner = new Scanner(newInput);
     }
 
-    public int[] getComputerMemory() {
-        return computerMemory;
+    public long[] getProgramMemory() {
+        return programMemory;
     }
 
     public boolean isExecutionHalted() {
         return haltExecution;
+    }
+
+    public void writeDataToMemory(long position, long data) {
+
+        if (position >= programMemory.length) {
+            memoryBank.put(position, data);
+            System.out.println("Writing value " + data + " to databank, position: " + position);
+        }
+        else {
+            programMemory[(int) position] = data;
+            System.out.println("Writing value " + data + " to program memory, position: " + position);
+        }
+
+    }
+
+    public long readDataFromMemory(long position) {
+
+        if (position >= programMemory.length) {
+            if (memoryBank.containsKey(position)) {
+                System.out.println("Reading from databank, position: " + position);
+                return memoryBank.get(position);
+            }
+            else { return 0; }
+        }
+        else {
+            System.out.println("Reading from program memory, position: " + position);
+            return programMemory[(int) position];
+        }
+
     }
 }

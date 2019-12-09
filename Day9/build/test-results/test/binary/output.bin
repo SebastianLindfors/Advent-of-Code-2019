@@ -1,0 +1,796 @@
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 1
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 0
+1: 109
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+1: 0
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 1 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 1
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 2
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 1
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 2 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 2
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 3
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 2
+1: 204
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 2
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 3 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 3
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 4
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 3
+1: -1
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 3
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 4 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 4
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 5
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 4
+	1: 1001
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 4
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 5 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 5
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 6
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 5
+1: 100
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 5
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 6 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 6
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 7
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 6
+1: 1
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 6
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 7 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 7
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 8
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 7
+1: 100
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 7
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 8 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 8
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 9
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 8
+	1: 1008
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 8
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+,Writing value 9 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 9
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 10
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
+*Reading from program memory, position: 9
+1: 100
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 9
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 10 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 10
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 11
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 10
+1: 16
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 10
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 11 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 11
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 12
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 11
+1: 101
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 11
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 12 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 12
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 13
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 12
+	1: 1006
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 12
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 13 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 13
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 14
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 13
+1: 101
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 13
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 14 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 14
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 15
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 14
+1: 0
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 14
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 15 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 15
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 0 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 0
++Reading from program memory, position: 14
+2: 0
+3Instruction: 109 Opcode: 9 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1
+Relative base now: 16
+3Instruction: 204 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 2
+Parameters:
++Reading from program memory, position: 15
+1: 99
+4Instruction: 1001 Opcode: 1 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 15
+*Reading from program memory, position: 6
+2: 1
+*Reading from program memory, position: 7
+3: 100
+-Writing value 16 to databank, position: 100
+4Instruction: 1008 Opcode: 8 Number of arguments: 3
+Parameter Modes: 
+1: 0
+2: 1
+3: 1
+Parameters:
+&Reading from databank, position: 100
+1: 16
++Reading from program memory, position: 10
+2: 16
++Reading from program memory, position: 11
+3: 101
+,Writing value 1 to databank, position: 101
+4Instruction: 1006 Opcode: 6 Number of arguments: 2
+Parameter Modes: 
+1: 0
+2: 1
+Parameters:
+&Reading from databank, position: 101
+1: 1
++Reading from program memory, position: 14
+2: 0
+;109,1,204,-1,1001,100,1,100,1008,100,16,101,1006,101,0,99
+;109,1,204,-1,1001,100,1,100,1008,100,16,101,1006,101,0,99
+4Instruction: 1102 Opcode: 2 Number of arguments: 3
+Parameter Modes: 
+1: 1
+2: 1
+3: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 34915192
+*Reading from program memory, position: 2
+2: 34915192
+*Reading from program memory, position: 3
+3: 7
+?Writing value 1219070632396864 to program memory, position: 7
+1Instruction: 4 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 0
+Parameters:
+*Reading from program memory, position: 7
+1: 1219070632396864
+PO: 1219070632396864
+3Instruction: 104 Opcode: 4 Number of arguments: 1
+Parameter Modes: 
+1: 1
+Parameters:
+*Reading from program memory, position: 1
+1: 1125899906842624
+PO: 1125899906842624
