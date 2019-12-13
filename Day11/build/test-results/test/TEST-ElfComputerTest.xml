@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ElfComputerTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2019-12-13T02:21:35" hostname="DESKTOP-UF6QME7" time="0.229">
+  <properties/>
+  <testcase name="solveDay2Part1Test_expects9706670()" classname="ElfComputerTest" time="0.012"/>
+  <testcase name="jumpPositionModeTest_expects0()" classname="ElfComputerTest" time="0.002"/>
+  <testcase name="jumpPositionModeTest_expects1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="PositionModeTest2_expects0()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="PositionModeTest2_expects1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="solveDay5Part2Test_expects7408802()" classname="ElfComputerTest" time="0.007"/>
+  <testcase name="PositionModeTest1_expects0()" classname="ElfComputerTest" time="0.002"/>
+  <testcase name="PositionModeTest1_expects1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="relativeModeTest1_expectsCopyOfInputProgram()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="InputHandlingTest2_expects0()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="InputHandlingTest2_expects1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="InputHandlingTest1_expects0()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="InputHandlingTest1_expects1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="longTest1_expects()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="solveDay9Part1Test_expects3533056970()" classname="ElfComputerTest" time="0.003"/>
+  <testcase name="largeTest1_expects1000()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="largeTest1_expects1001()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="jumpImmediateModeTest_expects0()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="jumpImmediateModeTest_expects1()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="largeTest1_expects999()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="solveDay5Part1Test_expects5044655()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="solveDay2Part2Test_expects2552()" classname="ElfComputerTest" time="0.051"/>
+  <testcase name="solveDay9Part2Test_expects72852()" classname="ElfComputerTest" time="0.126"/>
+  <testcase name="longTest2_expects()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="basicFunctionalityTesting1()" classname="ElfComputerTest" time="0.001"/>
+  <testcase name="basicFunctionalityTesting2()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="basicFunctionalityTesting3()" classname="ElfComputerTest" time="0.0"/>
+  <testcase name="basicFunctionalityTesting4()" classname="ElfComputerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

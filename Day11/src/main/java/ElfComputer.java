@@ -72,7 +72,7 @@ public class ElfComputer {
                     if (!inputScanner.hasNextInt()) {
                         return systemOutput;
                     }
-                    opCode3(opCodeAndParamModes[1]);
+                   opCode3(opCodeAndParamModes[1]);
                     break;
                 case 4: //output
                     opCode4(opCodeAndParamModes[1]);
@@ -146,7 +146,7 @@ public class ElfComputer {
                 } else {
                     paramMode3 = 1;
                 }
-                System.out.println("OpCode: " + opCode + " PM1: " + paramMode1 + " PM2: " + paramMode2 + " PM3: " + paramMode3);
+                //System.out.println("OpCode: " + opCode + " PM1: " + paramMode1 + " PM2: " + paramMode2 + " PM3: " + paramMode3);
                 return new int[]{opCode, paramMode1, paramMode2, paramMode3};
             case 5:
             case 6:
@@ -162,7 +162,7 @@ public class ElfComputer {
                 } else {
                     paramMode2 = 0;
                 }
-                System.out.println("OpCode: " + opCode + " PM1: " + paramMode1 + " PM2: " + paramMode2);
+                //System.out.println("OpCode: " + opCode + " PM1: " + paramMode1 + " PM2: " + paramMode2);
                 return new int[]{opCode, paramMode1, paramMode2};
             case 3:
             case 4:
@@ -173,7 +173,7 @@ public class ElfComputer {
                 } else {
                     paramMode1 = 0;
                 }
-                System.out.println("OpCode: " + opCode + " PM1: " + paramMode1);
+                //System.out.println("OpCode: " + opCode + " PM1: " + paramMode1);
                 return new int[]{opCode, paramMode1};
             case 99:
                 return new int[]{opCode};
@@ -261,7 +261,7 @@ public class ElfComputer {
         long inputValue = inputScanner.nextLong();
 
         memory.put(resultPointer, inputValue);
-        System.out.println("Writing input value " + inputValue + " to memory position " + resultPointer);
+        //System.out.println("Writing input value " + inputValue + " to memory position " + resultPointer);
 
         SystemIndex += 2;
     }
@@ -271,7 +271,7 @@ public class ElfComputer {
         long term1 = readValue(paramMode1, 1);
 
         systemOutput.add(term1);
-        System.out.println("Writing value " + term1 + " to memory to output");
+        //System.out.println("Writing value " + term1 + " to memory to output");
 
         SystemIndex += 2;
 
@@ -281,15 +281,15 @@ public class ElfComputer {
 
         long testValue = readValue(paramMode1, 1);
         long resultPointer = readValue(paramMode2, 2);
-        System.out.print("Does " + testValue + " equal zero? ");
+        //System.out.print("Does " + testValue + " equal zero? ");
 
         if (testValue != 0) {
-            System.out.println("No, jumping to Index: " + resultPointer);
+            //System.out.println("No, jumping to Index: " + resultPointer);
             SystemIndex = Math.toIntExact(resultPointer);
         }
         else {
             SystemIndex += 3;
-            System.out.println("Yes, moving on normally.");
+            //System.out.println("Yes, moving on normally.");
         }
 
     }
@@ -338,15 +338,15 @@ public class ElfComputer {
         long term2 = readValue(paramMode2, 2);
 
         long resultPointer = inputValue(paramMode3, 3);
-        System.out.print("Is " + term1 + " equal to " + term2 + "? ");
+        //System.out.print("Is " + term1 + " equal to " + term2 + "? ");
 
         if (term1 == term2) {
             memory.put(resultPointer, 1L);
-            System.out.println("Yes, writing 1 to memory position " + resultPointer + ".");
+            //System.out.println("Yes, writing 1 to memory position " + resultPointer + ".");
         }
         else {
             memory.put(resultPointer, 0L);
-            System.out.println("No, writing 0 to memory position " + resultPointer + ".");
+            //System.out.println("No, writing 0 to memory position " + resultPointer + ".");
         }
 
         SystemIndex += 4;

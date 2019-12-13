@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AsteroidMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-11T16:03:02" hostname="DESKTOP-UF6QME7" time="0.029">
+  <properties/>
+  <testcase name="asteroidMap_laserProtocollTest()" classname="AsteroidMapTest" time="0.029"/>
+  <system-out><![CDATA[RV: -Infinity
+RV: -4.0
+RV: -2.0
+RV: -1.0
+RV: -0.0
+LV: 0.6666666666666666
+LV: 1.0
+LV: 2.0
+LV: 2.0
+3.0, 2.0
+4.0, 0.0
+4.0, 2.0
+4.0, 3.0
+4.0, 4.0
+0.0, 2.0
+1.0, 2.0
+2.0, 2.0
+1.0, 0.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
