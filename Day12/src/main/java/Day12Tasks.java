@@ -61,7 +61,7 @@ public class Day12Tasks {
             }
             ;
 
-            if (timeUnits++ == 10000000) {
+            if (timeUnits++ == 1000) {
                 haltSystem = true;
             }
 
