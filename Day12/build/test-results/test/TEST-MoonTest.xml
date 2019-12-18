@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-13T14:37:13" hostname="DESKTOP-UF6QME7" time="0.007">
+<testsuite name="MoonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-16T21:33:15" hostname="DESKTOP-UF6QME7" time="0.008">
   <properties/>
-  <testcase name="computeNextVelocityTest1_oneOtherMoon_expects111()" classname="MoonTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="repeatingValuesTest1()" classname="MoonTest" time="0.008"/>
+  <system-out><![CDATA[Match Found for 7
+Match Found for 6
+Match Found for 3
+Match Found for 3
+Match Found for 3
+Match Found for 3
+Match Found for 3
+Match Found for 3
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

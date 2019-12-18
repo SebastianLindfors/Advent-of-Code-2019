@@ -12,7 +12,7 @@ class MoonTest {
     void computeTotalLunarEnergyTest1_noVelocity_expects0() {
 
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
 
         double actual = testMoon.computeTotalLunarEnergy();
         double expected = 0;
@@ -24,7 +24,7 @@ class MoonTest {
     @Test
     void computeTotalLunarEnergyTest2_withVelocity_expects9() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
 
         double actual = testMoon.computeTotalLunarEnergy();
@@ -36,7 +36,7 @@ class MoonTest {
     @Test
     void moveMoonTest1_expects222() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
 
         testMoon.moveMoon();
@@ -49,7 +49,7 @@ class MoonTest {
     @Test
     void moveMoonTest2_expects234() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,2,3);
 
         testMoon.moveMoon();
@@ -62,9 +62,9 @@ class MoonTest {
     @Test
     void updateVelocityTest1_expects222() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
-        Moon testMoon2 = new Moon(10,10,10);
+        Moon testMoon2 = new Moon("0",10,10,10);
 
         testMoon.updateVelocity(testMoon2);
 
@@ -77,9 +77,9 @@ class MoonTest {
     @Test
     void updateVelocityTest2_expects022() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
-        Moon testMoon2 = new Moon(-10,10,10);
+        Moon testMoon2 = new Moon("1",-10,10,10);
 
         testMoon.updateVelocity(testMoon2);
 
@@ -92,9 +92,9 @@ class MoonTest {
     @Test
     void updateVelocityTest3_expects202() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
-        Moon testMoon2 = new Moon(10,-10,10);
+        Moon testMoon2 = new Moon("1",0,-10,10);
 
         testMoon.updateVelocity(testMoon2);
 
@@ -107,9 +107,9 @@ class MoonTest {
     @Test
     void updateVelocityTest4_expects220() {
 
-        Moon testMoon = new Moon(1,1,1);
+        Moon testMoon = new Moon("0",1,1,1);
         testMoon.setVelocity(1,1,1);
-        Moon testMoon2 = new Moon(10,10,-10);
+        Moon testMoon2 = new Moon("1",10,10,-10);
 
         testMoon.updateVelocity(testMoon2);
 
@@ -122,10 +122,10 @@ class MoonTest {
     @Test
     public void addOtherMoonTest1() {
 
-        Moon testMoon = new Moon(0,0,0);
-        Moon testMoon1 = new Moon(1,1,1);
-        Moon testMoon2 = new Moon(2,2,2);
-        Moon testMoon3 = new Moon(3,3,3);
+        Moon testMoon = new Moon("0",0,0,0);
+        Moon testMoon1 = new Moon("1",1,1,1);
+        Moon testMoon2 = new Moon("2",2,2,2);
+        Moon testMoon3 = new Moon("3",3,3,3);
 
         testMoon.addOtherMoon(testMoon1);
         testMoon.addOtherMoon(testMoon2);
@@ -143,8 +143,8 @@ class MoonTest {
     @Test
     public void computeNextVelocityTest1_oneOtherMoon_expects111() {
 
-        Moon testMoon = new Moon(0,0,0);
-        Moon testMoon1 = new Moon(10,10,10);
+        Moon testMoon = new Moon("0",0,0,0);
+        Moon testMoon1 = new Moon("1",10,10,10);
 
 
         testMoon.addOtherMoon(testMoon1);
@@ -158,9 +158,9 @@ class MoonTest {
     @Test
     public void computeNextVelocityTest2_twoOtherMoon_expects000() {
 
-        Moon testMoon = new Moon(0,0,0);
-        Moon testMoon1 = new Moon(10,10,10);
-        Moon testMoon2 = new Moon(-10,-10,-10);
+        Moon testMoon = new Moon("0",0,0,0);
+        Moon testMoon1 = new Moon("1",10,10,10);
+        Moon testMoon2 = new Moon("2",-10,-10,-10);
 
 
         testMoon.addOtherMoon(testMoon1);
@@ -171,5 +171,7 @@ class MoonTest {
         assertEquals(expected, testMoon.getVelocity());
 
     }
+
+
 
 }
