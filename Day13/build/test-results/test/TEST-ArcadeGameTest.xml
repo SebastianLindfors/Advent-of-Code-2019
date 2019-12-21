@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ArcadeGameTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-12-21T11:26:02" hostname="DESKTOP-UF6QME7" time="0.053">
+  <properties/>
+  <testcase name="updateGameState_update118_expectsException()" classname="ArcadeGameTest" time="0.007"/>
+  <testcase name="updateGameState_updateWithIllegalList_expectsException()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="updateGameState_update1Negative11_expectsException()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="updateGameStateFromList_update111_expects1()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="getGameStateData_getUnsetPoint_expectsException()" classname="ArcadeGameTest" time="0.0"/>
+  <testcase name="createOutputStringTest_makeFiveByFive()" classname="ArcadeGameTest" time="0.003"/>
+  <testcase name="updateGameStateFromList_update111update121_expects1expects1()" classname="ArcadeGameTest" time="0.0"/>
+  <testcase name="screenItemCountsTest_update111update110_expects1expects0()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="updateGameState_update111_expects1()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="screenItemCountsTest_noUpdate_expects0()" classname="ArcadeGameTest" time="0.0"/>
+  <testcase name="screenItemCountsTest_update111_expects1()" classname="ArcadeGameTest" time="0.001"/>
+  <testcase name="updateGameState_updateNegative111_expectsException()" classname="ArcadeGameTest" time="0.001"/>
+  <system-out><![CDATA[|###|
+|###|
+|###|
+| o |
+| _ |
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
