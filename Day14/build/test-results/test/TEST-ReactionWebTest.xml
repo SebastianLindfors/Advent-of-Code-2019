@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReactionWebTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-12-23T22:36:09" hostname="DESKTOP-UF6QME7" time="0.018">
+  <properties/>
+  <testcase name="assignReagentLevelTest_testFUEL_expect5()" classname="ReactionWebTest" time="0.006"/>
+  <testcase name="assignReagentLevelTest_testORE_expect0()" classname="ReactionWebTest" time="0.001"/>
+  <testcase name="computeReagentsTest_computeIllegalReagents_expectsException()" classname="ReactionWebTest" time="0.002"/>
+  <testcase name="computeReagentsTest_computeFUELReagents_expects7A1E()" classname="ReactionWebTest" time="0.002"/>
+  <testcase name="computeOreCostTest_compute1A_expect10()" classname="ReactionWebTest" time="0.0"/>
+  <testcase name="computeOreCostTest_computeFUEL_expect31()" classname="ReactionWebTest" time="0.001"/>
+  <testcase name="assignReagentLevelTest_testA_expect1()" classname="ReactionWebTest" time="0.001"/>
+  <testcase name="computeReagentsTest_compute2EReagents_expects14A2D()" classname="ReactionWebTest" time="0.001"/>
+  <system-out><![CDATA[Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 1, Produced: 10, Production Factor:1
+Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 28, Produced: 10, Production Factor:3
+Quantity: 1, Produced: 1, Production Factor:1
+Quantity: 2, Produced: 1, Production Factor:2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
