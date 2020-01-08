@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RepairRobotTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-27T22:56:21" hostname="DESKTOP-UF6QME7" time="0.009">
+  <properties/>
+  <testcase name="issueMoveOrderTest_move1()" classname="RepairRobotTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

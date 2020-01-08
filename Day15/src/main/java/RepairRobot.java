@@ -5,7 +5,10 @@ public class RepairRobot {
 
     ElfComputer robotComputer = new ElfComputer("src\\main\\resources\\Day15.txt");
 
-    Point currentPosition;
+    Mapper floorMap = new Mapper();
+
+    private Point currentPosition;
+    private Point targetPosition;
 
     public RepairRobot() {
 
@@ -15,13 +18,30 @@ public class RepairRobot {
 
     public void issueMoveOrder(int direction) {
 
-        setUpComputerInput(direction);
-        long moveResult = robotComputer.executeProgram().get(0);
+        Point targetPoint =  setupAndReturnMovementCoordinate(direction);
+        int moveResult = Math.toIntExact(robotComputer.executeProgram().get(0));
+
+        switch (moveResult) {
+            case 0:
+                floorMap.updateFloorLayout(targetPoint, moveResult);
+                break;
+            case 1:
+                floorMap.updateFloorLayout(targetPoint, moveResult);
+                this.currentPosition = targetPoint;
+                break;
+            case 2:
+                floorMap.updateFloorLayout(targetPoint, moveResult);
+                this.currentPosition = targetPoint;
+                this.targetPosition = targetPoint;
+                break;
+        }
+
+
 
 
     }
 
-    private Point setupAndReturnTargetCoordinate(int direction) {
+    private Point setupAndReturnMovementCoordinate(int direction) {
 
         switch (direction) {
             case 1:
@@ -42,4 +62,16 @@ public class RepairRobot {
         }
     }
 
+    public Point getCurrentPosition() {
+        return currentPosition;
+    }
+
+    public Point getTargetPosition() {
+
+        if (targetPosition == null) {
+            return new Point(0,0);
+        }
+
+        return targetPosition;
+    }
 }
